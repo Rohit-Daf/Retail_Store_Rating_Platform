@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config();
 
 const myAuth = require("./utils/auth");
 const userRouter = require("./routes/userRouter");
@@ -16,6 +17,8 @@ app.use("/user", userRouter);
 app.use("/store", storeRouter);
 app.use("/admin", adminRouter);
 
-app.listen(4000, "localhost", () => {
-  console.log("server started at port 4000");
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Server started at port ${PORT}`);
 });

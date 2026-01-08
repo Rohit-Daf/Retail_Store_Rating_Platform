@@ -3,8 +3,6 @@
 # =========================
 node_modules/
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # =========================
 # React (Vite / CRA)
@@ -26,27 +24,4 @@ server/logs/
 # Environment files
 # =========================
 .env
-.env.local
-.env.development
-.env.production
-
 # =========================
-# Database
-# =========================
-# *.db
-*.sqlite
-*.sqlite3
-
-# =========================
-# IDE / OS
-# =========================
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-
-# =========================
-# Others
-# =========================
-coverage/
-.cache/
